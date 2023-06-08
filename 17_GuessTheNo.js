@@ -1,3 +1,6 @@
+//Problem : Write a JS program to generate a random number and store it in a variable. The program then takes an inout fromthe user to tell them wheather the fuess was correct , greater or lesser than the orifinal number.
+// 100-(number of gueeses) is the score of the user. The programm is exoected to terminate ince the number is guessed. Number should be between 1 to 100.
+
 const prompt = require('prompt-sync')();
 
 let num = Math.round((Math.random()*100));
