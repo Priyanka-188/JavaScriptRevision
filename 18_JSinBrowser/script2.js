@@ -9,5 +9,13 @@
 
 //Question : change the color of the background as per the user input
 
-let color = prompt("enter a color");
-document.body.style.background = "color";
+// let color = prompt("enter a color");
+// document.body.style.background = "color";
+
+// console.log(document.body)
+
+console.log(document.body.firstChild)
+a = document.body.firstChild
+console.log(a.parentNode)
+console.log(a.parentElement)
+console.log(a.firstChild.nextSibling)
