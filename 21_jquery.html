@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery Tutorial</title>
+    <script src="jquery.min.js"></script>
+
+    <script>
+        // The "$" sign refers to the jquery library
+        $(document).ready(function(){
+            // alert("Hare Krishna!")
+        
+        // $("button").click(function(){
+        //     $("h1").hide();
+        //     $("img").hide();
+        // });
+
+        // $("button").click(function(){
+        //     $(".first").hide();
+        // })
+
+        // $("button").click(function(){
+        //     $("#second").hide();
+        // })
+
+        // $("button").click(function(){
+        //     $("p").toggle();
+        // })
+
+        $("button").click(function(){
+            $('p').slideToggle();
+            $('img').slideToggle();
+        })
+    }); 
+
+    </script>
+</head>
+<body>
+    <h1>This is  a heading</h1>
+    <p class="first">This is a paragraph</p>
+    <p id="second">This is another paragraph</p>
+
+    <button>Click me to hide paragraphs</button>
+
+    <img src="b.jpg" alt="">
+</body>
+</html>
