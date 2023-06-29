@@ -1,0 +1,87 @@
+<!-- Validate form using jquery in javascript -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script>
+        $(document).ready(()=>{
+            //After form Submitted validation
+            $("#contact_submit_button").click(function(event){
+                event.preventDefault();
+
+                let name = $("#contact_name").val();
+                if(name){
+                    $("#contact_name").removeClass("invalid").addClass("valid");
+                }
+                else{
+                    $("#contact_name").removeClass("valid").addClass("invalid");
+                }
+            })
+        })
+    </script>
+    <style>
+        .container{
+            padding: 10px;
+        }
+     input{
+        border-radius: 3px;
+        padding: 5px;
+        width: 15%;
+        margin-bottom: 10px;
+     }
+     button{
+        background-color: aqua;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+     }
+     .valid{
+        border: 2px solid green;
+     }
+     .invalid{
+        border: 2px solid red;
+     }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>This is form validation example</h2>
+
+        <form id="contact" method="post" action="">
+            <!-- Name -->
+            <div>
+                <label for="contact_name">Name:</label>
+                <br>
+                <input type="text" name="name"  id="contact_name">
+            </div>
+    
+            <!-- Email -->
+            <div>
+                <label for="contact_email">Email:</label>
+                <br>
+                <input type="email" name="email" id="contact_email">
+            </div>
+            <!-- Website -->
+            <div>
+                <label for="contact_website">Website:</label>
+                <br>
+                <input type="url" name="Website" id="contact_website">
+            </div>
+            <!-- Message -->
+            <div>
+                <label for="contact_message"  id="message">Message:</label>
+                <br>
+                <textarea name="Message" id="contact_message" cols="30" rows="5"></textarea>
+            </div>
+            <!-- Submission Button -->
+            <div id="contact_submit">
+                <button id="contact_submit_button" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
