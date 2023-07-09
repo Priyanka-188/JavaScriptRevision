@@ -1,0 +1,26 @@
+<!-- insertAdjacentHTML, insertAdjacentElement and insertAdjacentText -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insertAdjacentHTML, insertAdjacentElement and insertAdjacentText</title>
+</head>
+<body>
+    <div id="first">Hare Krishna first</div>
+
+
+
+
+    <script>
+        first.insertAdjacentHTML("beforeend",'<div id="test">Radhe Krishna</div>');
+
+        first.insertAdjacentHTML("beforebegin",'<div id="test">Radhe Radhe</div>');
+
+        first.insertAdjacentHTML("afterbegin",'<div id="test">Radhe vallabh</div>');
+
+        first.insertAdjacentHTML("afterend",'<div id="test">Radhe Shyam</div>');
+    </script>
+</body>
+</html>

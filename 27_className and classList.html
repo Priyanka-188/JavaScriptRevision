@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>className and classList</title>
+    <style>
+      .red {
+        background-color: red;
+        color: white;
+        font-size: 1.5rem;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+      .color {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="first" class="yellow red color">
+      <span
+        >Hare Krishna Hare Krishna Krishna Krishna Hare Hare Hare Ram Hare Ram
+        Ram Ram Hare Hare</span
+      >
+    </div>
+
+    <script>
+      first.className = "red";
+
+      first.classList.remove("red");
+      undefined;
+      first.classList.remove("yellow");
+      undefined;
+      first.className = "red";
+      ("red");
+      first.classList.add("color");
+      first.classList.contains("red");
+      first.classList.toggle("red");
+    </script>
+  </body>
+</html>

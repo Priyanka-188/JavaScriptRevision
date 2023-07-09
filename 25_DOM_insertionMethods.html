@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML insertion Methods</title>
+
+</head>
+<body>
+    Outer start
+    <div class="container">
+        "I am start of div[0](inner)"
+        <div id="first">
+            I am a first element
+        </div>
+        I am end of this container div[0](inner)
+    </div>
+    Outer end
+
+
+
+
+
+    <script>
+       a= document.getElementsByTagName("div")[0];
+    //    console.log(a);
+
+    // first way
+    // a.innerHTML = a.innerHTML+"<h1>HARE KRISHNA</h1>"
+
+    // 2nd way
+    let div = document.createElement("div");
+    div.innerHTML = "<h1>Hare Krishna</h1>"
+    // a.appendChild(div);
+
+    // a.append(div);
+    // a.prepend(div);
+    // a.after(div);
+    // a.before(div);
+    a.replaceWith(div);
+
+    // console.log(document.getElementsByTagName("div"))
+    </script>
+</body>
+</html>
