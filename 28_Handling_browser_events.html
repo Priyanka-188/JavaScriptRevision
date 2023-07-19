@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handling Browser events</title>
+    <style></style>
+
+    
+  </head>
+  <body>
+    <div class="container">
+      <button id="btn">click me</button>
+    </div>
+
+
+    <script>
+        btn = document.getElementById("btn");
+
+        let x = function(e){
+            alert("Hare Krihsna")
+        }
+        btn.addEventListener("click",x)
+
+        let y = function(e){
+            alert("Jai Radhe");
+        }
+        btn.addEventListener('click',y);
+
+        let a = prompt("Enter a value");
+        if (a==2){
+            btn.removeEventListener('click',x)
+        }
+
+
+    </script>
+  </body>
+</html>
